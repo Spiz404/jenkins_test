@@ -8,5 +8,9 @@ pipeline {
                 sh 'echo build'
             }
         }
+
+        stage("run") {
+            sh 'python main.py'
+        }
     }
 }
